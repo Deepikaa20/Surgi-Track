@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  }
+  
+  /* Main Content Styles */
+  main {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  .dashboard {
+    text-align: center;
+  }
+  
+  .dashboard h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .option-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .option-card img {
+    height: 80px; /* Adjust logo size */
+    margin-bottom: 10px;
+  }
+  
+  .option-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  /* Global Styles */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+  
+  /* Header Styles */
+  header {
+    background-color: #406a96; /* Blue background */
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Vertically center items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the navbar */
+  }
+  
+  /* Logo and Title Styles */
+  .logo {
+    display: flex;
+    align-items: center; /* Vertically center logo and title */
+    gap: 10px; /* Space between logo and title */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust logo size */
+  }
+  
+  .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Navigation Links Styles */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Equal space between links */
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: black; /* Yellow color on hover */
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Dashboard Styles */
+  /* .dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */ 
+  
+  /* .options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .option-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .option-card img {
+    height: 60px;
+    margin-bottom: 10px;
+  } */
+  
+  /* Patient Dashboard */
+  .patient-dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-dashboard h2 {
+    margin-bottom: 20px;
+  }
+  
+  #surgery-details p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Hospital Dashboard */
+  .hospital-dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #patient-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .patient-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .patient-card button:hover {
+    background: #0056b3;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  @media (max-width: 768px) {
+    .options {
+      flex-direction: column;
+    }
+    .option-card {
+      width: 100%;
+    }
+  }

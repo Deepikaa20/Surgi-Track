@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header Styles */
+header {
+  background-color: #406a96; /* Blue background */
+  padding: 20px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav links */
+  align-items: center; /* Vertically center items */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the navbar */
+}
+
+/* Logo and Title Styles */
+.logo {
+  display: flex;
+  align-items: center; /* Vertically center logo and title */
+  gap: 10px; /* Space between logo and title */
+}
+
+.logo img {
+  height: 40px; /* Adjust logo size */
+}
+
+.logo h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Navigation Links Styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Equal space between links */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: black; /* Yellow color on hover */
+}
+
+/* Main Content Styles */
+main {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  /* padding: 10px 0; */
+}
+
+/* Hospital Dashboard Styles */
+.hospital-dashboard {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Limit dashboard width */
+  text-align: center;
+}
+
+.hospital-dashboard h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Register Patient Form Styles */
+.register-patient {
+  margin-bottom: 30px;
+}
+
+.register-patient h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.register-patient form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+.register-patient .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between label and input */
+  text-align: left;
+}
+
+.register-patient label {
+  font-size: 16px;
+  color: #555;
+}
+
+.register-patient input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-patient button {
+  align-self: flex-start; /* Align button to the left */
+  padding: 10px 20px;
+  background-color: #406a96;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-patient button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
